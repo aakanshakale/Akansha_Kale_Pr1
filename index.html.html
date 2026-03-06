@@ -1,130 +1,142 @@
-<!DOCTYPE html>
-<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>College Time Table</title>
+<html lage="en>"
+<head>
+    <meta charset="UTF-8">
+    <meta charset="vieowport"content="width=device-width,initial-scale>"
+
+    <title>Document</title>
+
+</head>
+<body>
+    <form>
+        <label for="fname">Enter your First Name</label><br>
+        <input type="test"name="fname"id =""><br>
+        <label for="iname">Enter Your First Name</label><br>
+        <input types="test" name="lame"id=""><br>
+        <label for="moblieno"> Enter Your moblie</label><br>
+        <button> submit</button>
+    </form>
+</body><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ABC College</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        table {
-            border-collapse: collapse;
-            width: 80%;
-            margin: 20px auto;
+
+        header {
+            background-color: #002147;
+            color: white;
+            padding: 20px;
             text-align: center;
         }
-        th, td {
-            border: 2px solid rgba(101, 18, 156, 0.096);
+
+        nav {
+            background-color: #003366;
             padding: 10px;
+            text-align: center;
         }
-        th {
-            background-color: #3d090998;
-        }
-        caption {
-            font-size: 22px;
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
             font-weight: bold;
-            margin-bottom: 10px;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        footer {
+            background-color: #002147;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px gray;
         }
     </style>
 </head>
 <body>
 
-<table>
-    <caption>College Time Table</caption>
-    <tbody><tr>
-        <th>Day/Time</th>
-        <th>9:00 - 10:00</th>
-        <th>10:00 - 11:00</th>
-        <th>11:00 - 12:00</th>
-        <th>12:00 - 1:00</th>
-        <th>1:00 - 2:00</th>
-        <th>2:00 - 3:00</th>
-    </tr>
+<header>
+    <h1>ABC College</h1>
+    <p>Empowering Students for a Bright Future</p>
+</header>
 
-    <tr>
-        <th>Monday</th>
-        <td>Math</td>
-        <td>Physics</td>
-        <td>Chemistry</td>
-        <td rowspan="5">Lunch</td>
-        <td>English</td>
-        <td>Computer</td>
-    </tr>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#courses">Courses</a>
+    <a href="#admission">Admission</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <tr>
-        <th>Tuesday</th>
-        <td>Biology</td>
-        <td>Math</td>
-        <td>Physics</td>
-        <td>Sports</td>
-        <td>Computer</td>
-    </tr>
+<section id="home" class="container">
+    <h2>Welcome to ABC College</h2>
+    <p>ABC College is committed to providing quality education and fostering innovation and leadership.</p>
+</section>
 
-    <tr>
-        <th>Wednesday</th>
-        <td>Chemistry</td>
-        <td>English</td>
-        <td>Math</td>
-        <td>Physics</td>
-        <td>Library</td>
-    </tr>
+<section id="about" class="container">
+    <h2>About Us</h2>
+    <div class="card">
+        <p>Established in 1990, ABC College has been delivering excellence in education with experienced faculty and modern infrastructure.</p>
+    </div>
+</section>
 
-    <tr>
-        <th>Thursday</th>
-        <td>Computer</td>
-        <td>Biology</td>
-        <td>English</td>
-        <td>Chemistry</td>
-        <td>Math</td>
-    </tr>
+<section id="courses" class="container">
+    <h2>Our Courses</h2>
+    <div class="card">
+        <ul>
+            <li>Bachelor of Science (B.Sc)</li>
+            <li>Bachelor of Arts (B.A)</li>
+            <li>Bachelor of Commerce (B.Com)</li>
+            <li>Master of Science (M.Sc)</li>
+            <li>Master of Business Administration (MBA)</li>
+        </ul>
+    </div>
+</section>
 
-    <tr>
-        <th>Friday</th>
-        <td>Physics</td>
-        <td>Computer</td>
-        <td>Biology</td>
-        <td>Math</td>
-        <td>Sports</td>
-    </tr>
+<section id="admission" class="container">
+    <h2>Admission</h2>
+    <div class="card">
+        <p>Admissions are open for the academic year 2026. Apply online or visit our campus for more details.</p>
+    </div>
+</section>
 
-</tbody></table>
+<section id="contact" class="container">
+    <h2>Contact Us</h2>
+    <div class="card">
+        <p>Email: info@abccollege.com</p>
+        <p>Phone: +8056433456</p>
+        <p>Address: 123 College Road, Your City</p>
+    </div>
+</section>
 
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
+<footer>
+    <p>&copy; 2026 ABC College | All Rights Reserved</p>
+</footer>
 
-</body></html>
+</body>
+</html>
